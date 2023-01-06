@@ -18,7 +18,7 @@ For configure the entry, use **config()** and insert optional args (color, borde
 
 # Exemple
 
-`
+```
 screen = pygame.display.set_mode((200, 200))
 entry = Entry(screen, pygame.Rect(25, 85, 150, 30))
 
@@ -33,4 +33,5 @@ while True:
         if event.type == pygame.QUIT:
           pygame.quit()
         elif event.type == pygame.KEYDOWN:
-          entry.entry(event)`
+          entry.entry(event)
+```
