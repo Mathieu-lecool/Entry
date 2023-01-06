@@ -30,6 +30,7 @@ class Entry:
             self.texte[1] = temp
         self.screen.blit(txt.render(self.texte[1], True, (0,0,0)), (self.rect.x+self.margin, self.rect.y+self.rect.height/2-int(txt.size(self.texte[1])[1]/2)))
 
+""" Code for testing the code
 
 screen = pygame.display.set_mode((200, 200))
 entry = Entry(screen, pygame.Rect(25, 85, 150, 30))
@@ -39,5 +40,8 @@ while True:
     pygame.display.flip()
 
     for event in pygame.event.get():
-        if event.type == pygame.QUIT: pygame.quit()
-        elif event.type == pygame.KEYDOWN: entry.entry(event)
+        if event.type == pygame.QUIT:
+            pygame.quit()
+        elif event.type == pygame.KEYDOWN:
+            entry.entry(event)
+"""
